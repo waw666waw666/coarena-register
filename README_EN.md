@@ -52,12 +52,13 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. Configuration (Optional)
+### 2. Configuration & Crucial Guidance
 
 Copy `config.example.json` to `config.json` to configure proxies or headless mode:
 
 ```json
 {
+  "email": null,
   "browser": {
     "headless": false,
     "slow_mo": 50,
@@ -68,6 +69,18 @@ Copy `config.example.json` to `config.json` to configure proxies or headless mod
   "output_dir": "./results"
 }
 ```
+
+### Crucial: Google OAuth Handoff & Pure Protocol Minting
+
+1. **Google OAuth Authorization Handoff**:
+   - Coarena does not support traditional password registration; authentication is 100% Google OAuth based;
+   - When launched, click **"Continue with Google"** in the browser window to complete authentication;
+2. **100% Pure REST Protocol Takeover**:
+   - No UI clicking required after login;
+   - The script captures session cookies and directly executes REST protocol endpoints:
+     - Calls `/api/me/consent` to sign platform terms;
+     - Calls `/api/me/keys` to mint a permanent API key named `AutoRegister-Key`;
+     - Calls `/api/v1/limits` to verify daily quota, saving output to `results/accounts.txt`.
 
 ### 3. Execution
 
