@@ -108,7 +108,7 @@ class CoarenaAdapter(BaseSiteAdapter):
         print("[*] [Coarena] [Protocol] Minting new API Key via /api/me/keys...")
         mint_resp = session.post(
             "https://coarena.ai/api/me/keys",
-            json={"name": "AutoRegister-Key"},
+            json={"name": "RegisterHub-Key"},
             headers={"Content-Type": "application/json"},
             timeout=15
         )
