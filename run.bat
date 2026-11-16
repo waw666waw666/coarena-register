@@ -1,8 +1,8 @@
 @echo off
 chcp 65001 >nul
-title Coarena AutoRegister
+title Coarena RegisterHub
 echo ========================================================
-echo   Coarena AutoRegister
+echo   Coarena RegisterHub
 echo   Coarena AI 平台谷歌登录后 100% 纯协议注册与 API Key 极速提纯工具
 echo ========================================================
 echo.

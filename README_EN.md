@@ -1,4 +1,4 @@
-# Coarena AutoRegister
+# Coarena RegisterHub
 
 > **Post-Google OAuth Pure Protocol Registration & Key Minting Tool for Coarena AI**  
 > Built for zero-configuration, production-grade automated account generation and API key minting.
@@ -6,14 +6,14 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen.svg)](https://www.python.org/)
 [![Playwright](https://img.shields.io/badge/playwright-stealth-orange.svg)](https://playwright.dev/)
-[![Powered By](https://img.shields.io/badge/Powered%20By-AutoRegister%20Community-purple.svg)](https://github.com/waw666waw666/register-community)
+[![Powered By](https://img.shields.io/badge/Powered%20By-RegisterHub-purple.svg)](https://github.com/waw666waw666/register-community)
 
 ---
 
 ## Ecosystem & Backlink Notice
 
 > **Framework Origin**:  
-> This standalone tool is derived directly from **[AutoRegister Community](https://github.com/waw666waw666/register-community)**, a general-purpose automated account registration and credential management framework.  
+> This standalone tool is derived directly from **[RegisterHub (register-community)](https://github.com/waw666waw666/register-community)**, a general-purpose automated account registration and credential management framework.  
 > 
 > If you need multi-site orchestration, tri-channel disposable mailbox rotators, lifecycle credential verification, or automated adapter code generation scaffolds, check out our primary repository:  
 > 
@@ -79,7 +79,7 @@ Copy `config.example.json` to `config.json` to configure proxies or headless mod
    - No UI clicking required after login;
    - The script captures session cookies and directly executes REST protocol endpoints:
      - Calls `/api/me/consent` to sign platform terms;
-     - Calls `/api/me/keys` to mint a permanent API key named `AutoRegister-Key`;
+     - Calls `/api/me/keys` to mint a permanent API key named `RegisterHub-Key`;
      - Calls `/api/v1/limits` to verify daily quota, saving output to `results/accounts.txt`.
 
 ### 3. Execution
@@ -106,15 +106,15 @@ email----password----api_key----timestamp
 
 ## Ecosystem Portfolio
 
-Part of the AutoRegister open-source automation family:
+Part of the RegisterHub open-source automation family:
 
 | Standalone Project | Characteristics | Source Repository |
 | :--- | :--- | :--- |
-| **AutoRegister Community** | General Registration Engine & Scaffolding | [GitHub](https://github.com/waw666waw666/register-community) |
-| **Deepgram AutoRegister** | $200 USD Allowance + reCAPTCHA v2 Penetration | [GitHub](https://github.com/waw666waw666/deepgram-register) |
-| **100MilionSeek AutoRegister** | 100M Tokens/day + Instant Card Key Harvester | [GitHub](https://github.com/waw666waw666/100milionseek-register) |
-| **AMD AI Dev AutoRegister** | Official AMD Program + Akamai Telemetry Parity | [GitHub](https://github.com/waw666waw666/amd-register) |
-| **Coarena AutoRegister** | Post-OAuth Pure REST Protocol Key Minting | [GitHub](https://github.com/waw666waw666/coarena-register) |
+| **RegisterHub** | General Registration Engine & Scaffolding | [GitHub](https://github.com/waw666waw666/register-community) |
+| **Deepgram RegisterHub** | $200 USD Allowance + reCAPTCHA v2 Penetration | [GitHub](https://github.com/waw666waw666/deepgram-register) |
+| **100MilionSeek RegisterHub** | 100M Tokens/day + Instant Card Key Harvester | [GitHub](https://github.com/waw666waw666/100milionseek-register) |
+| **AMD AI Dev RegisterHub** | Official AMD Program + Akamai Telemetry Parity | [GitHub](https://github.com/waw666waw666/amd-register) |
+| **Coarena RegisterHub** | Post-OAuth Pure REST Protocol Key Minting | [GitHub](https://github.com/waw666waw666/coarena-register) |
 
 ---
 
