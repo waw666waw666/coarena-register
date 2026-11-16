@@ -1,4 +1,4 @@
-# Coarena RegisterHub
+# Coarena Register
 
 > **Post-Google OAuth Pure Protocol Registration & Key Minting Tool for Coarena AI**  
 > Built for zero-configuration, production-grade automated account generation and API key minting.
@@ -111,10 +111,10 @@ Part of the RegisterHub open-source automation family:
 | Standalone Project | Characteristics | Source Repository |
 | :--- | :--- | :--- |
 | **RegisterHub** | General Registration Engine & Scaffolding | [GitHub](https://github.com/waw666waw666/RegisterHub) |
-| **Deepgram RegisterHub** | $200 USD Allowance + reCAPTCHA v2 Penetration | [GitHub](https://github.com/waw666waw666/deepgram-register) |
-| **100MilionSeek RegisterHub** | 100M Tokens/day + Instant Card Key Harvester | [GitHub](https://github.com/waw666waw666/100milionseek-register) |
-| **AMD AI Dev RegisterHub** | Official AMD Program + Akamai Telemetry Parity | [GitHub](https://github.com/waw666waw666/amd-register) |
-| **Coarena RegisterHub** | Post-OAuth Pure REST Protocol Key Minting | [GitHub](https://github.com/waw666waw666/coarena-register) |
+| **Deepgram Register** | $200 USD Allowance + reCAPTCHA v2 Penetration | [GitHub](https://github.com/waw666waw666/deepgram-register) |
+| **100MilionSeek Register** | 100M Tokens/day + Instant Card Key Harvester | [GitHub](https://github.com/waw666waw666/100milionseek-register) |
+| **AMD AI Dev Register** | Official AMD Program + Akamai Telemetry Parity | [GitHub](https://github.com/waw666waw666/amd-register) |
+| **Coarena Register** | Post-OAuth Pure REST Protocol Key Minting | [GitHub](https://github.com/waw666waw666/coarena-register) |
 
 ---
 

@@ -1,5 +1,5 @@
 """
-Coarena RegisterHub - Standalone Entry Point.
+Coarena Register - Standalone Entry Point.
 Powered by RegisterHub (https://github.com/waw666waw666/RegisterHub).
 """
 import os
@@ -49,7 +49,7 @@ def run_single(config: dict, headless_override=None, proxy_override=None) -> boo
     output_dir = Path(config.get("output_dir", "./results"))
 
     print("=" * 65)
-    print("  Coarena RegisterHub - Execution Pipeline")
+    print("  Coarena Register - Execution Pipeline")
     print("  Channel  :", channel)
     print("  Headless :", headless)
     print("  Proxy    :", proxy_server or "Direct Connection")
