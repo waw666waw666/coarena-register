@@ -69,8 +69,9 @@ class CoarenaAdapter(BaseSiteAdapter):
         print("[*] [Coarena] OAuth authenticated. Extracting session cookies for pure protocol execution...")
         cookies = self.context.cookies()
         session = requests.Session()
+        ua = self.page.evaluate("() => navigator.userAgent") if self.page else "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
         session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            "User-Agent": ua,
             "Accept": "application/json",
             "Referer": "https://coarena.ai/account/api",
             "Origin": "https://coarena.ai",
@@ -131,7 +132,7 @@ class CoarenaAdapter(BaseSiteAdapter):
             return False
 
         # Protocol Step 4: Verify key limits
-        print(f"[★] [Coarena] Key minted: {self.api_key[:12]}***")
+        print(f"[+] [Coarena] Key minted: {self.api_key[:12]}***")
         try:
             lim_resp = session.get("https://coarena.ai/api/v1/limits", headers={"Authorization": f"Bearer {self.api_key}"}, timeout=15)
             if lim_resp.status_code == 200:
