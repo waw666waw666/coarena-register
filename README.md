@@ -52,12 +52,13 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. 运行配置 (可选)
+### 2. 运行配置与核心实操说明
 
-项目根目录提供开箱即用的 `config.example.json`。如需挂载本地代理或修改超时，直接复制为 `config.json` 即可：
+项目根目录提供开箱即用的 `config.example.json`。可复制为 `config.json` 进行配置：
 
 ```json
 {
+  "email": null,
   "browser": {
     "headless": false,
     "slow_mo": 50,
@@ -68,6 +69,18 @@ playwright install chromium
   "output_dir": "./results"
 }
 ```
+
+### 核心必读：Google 授权交接与纯协议秒提 Key (OAuth & Protocol Guide)
+
+1. **Google 一键登录态交接**：
+   - Coarena 平台不提供普通账密注册，全站基于 Google OAuth 鉴权；
+   - 启动后浏览器会自动打开 Coarena 登录页，在弹出的窗口中点击 **“Continue with Google”** 登录一次你的谷歌账号；
+2. **100% 纯 REST 协议秒级成号**：
+   - 登录完成后无需在界面上翻找菜单或点击弹窗；
+   - 脚本自动捕获 Session Cookie，脱离浏览器直调后端接口：
+     - 调用 `/api/me/consent` 自动签署平台条款；
+     - 调用 `/api/me/keys` 自动创建名为 `AutoRegister-Key` 的永久 API Key；
+     - 调用 `/api/v1/limits` 自动核验额度，保存至 `results/accounts.txt`。
 
 ### 3. 一键启动下号
 
